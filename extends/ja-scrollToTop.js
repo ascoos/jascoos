@@ -1,13 +1,16 @@
 (function($) {
-/**
-	* START FUNCTION scrollToTop
-	*
-	*  FUNCTION: scrollToTop
-	*  DESCRIPT: Creates scrolling of the page at the top
-	*
-	*  USE: jQuery(window).scrollToTop('.scrollToTop', {topElem:120, animateSpeed:1000, finalScrollTop:20});	
-	*
-	**/
+	
+	/* ---- START FUNCTION scrollToTop ---- */	
+	/**
+	 * @function scrollToTop
+	 * @description Creates scrolling of the page at the top
+	 * 
+	 * @param obj [string]		ID or Class of html tag for this scroll element.
+	 * @param options [array]   Contains the configuration options
+	 *
+	 * @example jQuery(window).scrollToTop('.scrollToTop', {topElem:120, animateSpeed:1000, finalScrollTop:20});	
+	 *
+	 */
 	$.fn.scrollToTop = function(obj, options) {
 		defaults = { 
 			topElem: 100,			// The position from the top where the scroll object will appear.
